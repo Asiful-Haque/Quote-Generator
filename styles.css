@@ -1,0 +1,110 @@
+body {
+    background: linear-gradient(135deg, #f5f5f5 0%, #d7e1ec 100%);
+    font-family: "Arial", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.container {
+    background: rgb(69, 174, 160);
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.quote-container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    position: relative;
+    padding: 20px;
+}
+
+.quote-text {
+    font-size: 1.6rem;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+.quote-author {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    text-align: right;
+    margin-bottom: 0;
+}
+
+.btn-animated {
+    background-color: #3498db;
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    margin-top: 20px;
+    width: 150px;
+    font-weight: bold; /* Make the text bold */
+    display: block; /* Make the button a block-level element */
+    margin-left: auto; /* Align to the center */
+    margin-right: auto; /* Align to the center */
+}
+
+.btn-animated:hover {
+    background-color: #2980b9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 30px;
+    }
+
+    .quote-text {
+        font-size: 1.4rem;
+    }
+
+    .quote-author {
+        font-size: 1rem;
+    }
+
+    .btn-animated {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 20px;
+    }
+
+    .quote-text {
+        font-size: 1.2rem;
+    }
+
+    .quote-author {
+        font-size: 0.9rem;
+    }
+
+    .btn-animated {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
